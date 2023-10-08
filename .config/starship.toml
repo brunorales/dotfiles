@@ -1,18 +1,38 @@
 # Sets user-defined palette
 palette = "catppuccin_macchiato"
 
+[package]
+disabled = true
+
+[fill]
+symbol = " "
+
 [character]
-# Note the use of Catppuccin color 'maroon'
-success_symbol = "[[♥](green) ❯](maroon)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[➜](bold text)"
+error_symbol = "[ ➜](bold text)"
+vimcmd_symbol = "[➜](bold blue)"
 
 [directory]
-truncation_length = 4
-# Catppuccin 'lavender'
-style = "bold lavender"
+truncation_length = 5
+read_only = " 󰌾"
+style = "bold mauve"
+truncate_to_repo = false
 
-# palette tables should be last in the config ⚓️
+[shell]
+fish_indicator = 'fish'
+zsh_indicator = "zsh"
+bash_indicator = "bash"
+powershell_indicator = 'powershell'
+unknown_indicator = 'unknown shell'
+style = "text"
+disabled = true
+
+[git_branch]
+symbol = " "
+style = "bold red"
+
+# Custom theming palettes
+
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"
 flamingo = "#f0c6c6"
